@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="buscar">
+            <label for="code">Enter Code: </label>
+            <input type="text" id="code" name="code" onkeyup="redirect()" />
+        </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var inputField = document.getElementById("code");
+        inputField.focus();
+        });
+
+
+        function redirect() {
+            var codeInput = document.getElementById("code");
+            if (codeInput.value === "7502289450024"){
+                window.location.href = "coca1.html";
+            } else if (codeInput.value === "7501483106966") {
+                window.location.href = "coca2.html";
+            }
+        }
+        
+    </script>
+</body>
+</html>

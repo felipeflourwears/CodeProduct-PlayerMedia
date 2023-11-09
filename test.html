@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <div>
+            <label for="code">Enter Code: </label>
+            <input type="text" id="code" name="code" onkeyup="delayedRedirect(event)" />
+        </div>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var inputField = document.getElementById("code");
+        inputField.focus();
+        });
+
+
+        console.log("Hello world");
+        var timeoutId;
+
+        function delayedRedirect(event) {
+            console.log("Entrando a la funcion")
+            
+                var codeInput = document.getElementById("code");
+                if (codeInput.value.trim() !== "") {
+                    console.log("Input code entered")
+                    clearTimeout(timeoutId);
+                    if (codeInput.value === "7502289450024") {
+                    timeoutId = setTimeout(redirect1, 1500);
+                    } else if (codeInput.value === "7501483106966") {
+                    timeoutId = setTimeout(redirect2, 1500);
+                    }
+                    
+                    
+                }
+            
+        }
+
+        function redirect1() {
+            var codeInput = document.getElementById("code");
+            if (codeInput.value.trim() !== "") {
+                window.location.href = "coca1.html";
+            }
+        }
+        function redirect2() {
+            var codeInput = document.getElementById("code");
+            if (codeInput.value.trim() !== "") {
+                window.location.href = "coca2.html";
+            }
+        }
+    </script>
+</body>
+</html>
