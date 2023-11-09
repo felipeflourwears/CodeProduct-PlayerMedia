@@ -31,12 +31,15 @@
                     console.log("Input code entered")
                     clearTimeout(timeoutId);
                     if (codeInput.value === "7502289450024") {
-                    timeoutId = setTimeout(redirect1, 1500);
+                        console.log("Primer video");
+                        /* timeoutId = setTimeout(redirect1, 1500); */
                     } else if (codeInput.value === "7501483106966") {
-                    timeoutId = setTimeout(redirect2, 1500);
-                    }
-                    
-                    
+                        console.log("Segundo video");
+                        /* timeoutId = setTimeout(redirect2, 1500); */
+                    }else {
+                        console.log("Estoy dentro del else")
+                        inputField.form.reset();
+                    }  
                 }
             
         }

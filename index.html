@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--Material CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- CDN de Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
 </head>
 <body>
-        <div class="buscar">
-            <label for="code">Enter Code: </label>
-            <input type="text" id="code" name="code" onkeyup="redirect()" />
-        </div>
+    <div class="buscar">
+        <label for="code">Enter Code: </label>
+        <input type="text" id="code" name="code" onkeyup="redirect()" />
+        <span class="material-icons-sharp">search</span>
+    </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
         var inputField = document.getElementById("code");
@@ -19,10 +26,15 @@
 
         function redirect() {
             var codeInput = document.getElementById("code");
-            if (codeInput.value === "7502289450024"){
-                window.location.href = "coca1.html";
+            if (codeInput.value === "7502289450024") {
+                window.location.href = "templates/coca1.html";
             } else if (codeInput.value === "7501483106966") {
-                window.location.href = "coca2.html";
+                window.location.href = "templates/coca2.html";
+            } else {
+                console.log("***", codeInput.value, "***");
+                setTimeout(function() {
+                    codeInput.value = "";
+                }, 1000); // Ajusta el valor del retraso en milisegundos según tus necesidades
             }
         }
         
