@@ -17,27 +17,6 @@
         <input type="text" id="code" name="code" onkeyup="redirect()" />
         <span class="material-icons-sharp">search</span>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        var inputField = document.getElementById("code");
-        inputField.focus();
-        });
-
-
-        function redirect() {
-            var codeInput = document.getElementById("code");
-            if (codeInput.value === "7502289450024") {
-                window.location.href = "templates/coca1.html";
-            } else if (codeInput.value === "7501483106966") {
-                window.location.href = "templates/coca2.html";
-            } else {
-                console.log("***", codeInput.value, "***");
-                setTimeout(function() {
-                    codeInput.value = "";
-                }, 1000); // Ajusta el valor del retraso en milisegundos según tus necesidades
-            }
-        }
-        
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
