@@ -12,13 +12,18 @@ In the bar search you can input the next codes to interact and testing the platf
 7501295600126   --> Santa Clara
 7501055330683 --> Jugos del valle
 ```
+
 ## Platform to Interact
 You can interact
 [Visit WebSite](https://retailmibeex.net/codeproduct/)
-<img src="media/main.png" alt="main" width="800" height="600">
+<img src="media/main.png" alt="main" width="900" height="400">
+
+## Demo
+
+[![Texto alternativo](media/background.png)](media/demo.mp4)
 
 
 ## Hardware
 You need a scanner product or manually enter the codes
 
-<img src="media/scanner.jpg" alt="scanner" width="600" height="750">
+<img src="media/scanner.jpg" alt="scanner" width="600" height="700">
