@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const codes = [
-    { value: "7502289450024", redirectUrl: "templates/coca1.html" },
-    { value: "7501483106966", redirectUrl: "templates/coca2.html" }
+    { value: "7501055330683", redirectUrl: "templates/valle.html" },
+    { value: "7501055320639", redirectUrl: "templates/coca.html" },
+    { value: "7501295600126", redirectUrl: "templates/clara.html"},
+    { value: "7501055307906", redirectUrl: "templates/ciel.html"}
     // Agrega más códigos y URLs de redirección según sea necesario
 ];
 
