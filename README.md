@@ -1,4 +1,4 @@
-# Media Playe to intectact with product code
+# Media Player to interact with product code
 
 You can interact with a product showing the product code on a scanner to watch a related video about it. You requires only the product code, and the magic happens by itself
 
