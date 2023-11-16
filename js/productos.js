@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 const codes = [
-    { value: "7501055330683", redirectUrl: "templates/valle.html" },
-    { value: "7501055320639", redirectUrl: "templates/coca.html" },
-    { value: "7501295600126", redirectUrl: "templates/clara.html"},
-    { value: "7501055307906", redirectUrl: "templates/ciel.html"}
+    { value: "7501055330683", redirectUrl: "../templates/valle.html" },
+    { value: "7501055320639", redirectUrl: "../templates/coca.html" },
+    { value: "7501295600126", redirectUrl: "../templates/clara.html"},
+    { value: "7501055307906", redirectUrl: "../templates/ciel.html"}
     // Agrega más códigos y URLs de redirección según sea necesario
 ];
 
@@ -25,3 +25,9 @@ function redirect() {
         }, 1000); // Ajusta el valor del retraso en milisegundos según tus necesidades
     }
 }
+
+var video = document.getElementById("myVideo");
+      
+video.onended = function() {
+    window.location.href = "../index.html";
+};

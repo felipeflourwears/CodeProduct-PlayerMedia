@@ -14,3 +14,8 @@ body, html {
     height: 100%;
     object-fit: cover;
 }
+
+#code {
+    opacity: 0; /* Hacer el input transparente */
+    position: absolute; /* Posición absoluta para mantenerlo fuera de la vista */
+}

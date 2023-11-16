@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url("../media/background.png");
+    background: url("../media/back.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,5 +46,10 @@ body {
     color: white;
 }
 
+#code {
+    border: solid .2rem transparent;
+    opacity: 0; /* Hacer el input transparente */
+    position: absolute; /* Posición absoluta para mantenerlo fuera de la vista */
+}
 
 
